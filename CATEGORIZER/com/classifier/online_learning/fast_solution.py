@@ -61,7 +61,6 @@ def get_x(csv_row, D):
         x.append(index)
     return x  # x contains indices of features that have a value of 1
 
-
 # C. Get probability estimation on x
 # INPUT:
 #     x: features

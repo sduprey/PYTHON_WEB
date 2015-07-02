@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//com/classifying/classifier_comparison.py=utf-8
+encoding//com/classifying/multi_output_decision_tree.py=utf-8
+encoding//com/classifying/page_type_classifier.py=utf-8
+encoding//com/data/fetching/data_fetching.py=utf-8
+encoding//com/data/fetching/panda_data_fetching.py=utf-8

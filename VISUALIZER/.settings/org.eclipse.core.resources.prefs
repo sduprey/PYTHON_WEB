@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//com/data/fetching/cds_data_processing_bigfile_csv.py=utf-8
+encoding//com/data/fetching/cds_data_processing_linking_counter_csv.py=utf-8
+encoding//com/data/fetching/cds_data_processing_linking_counter_pictures.py=utf-8
+encoding//com/data/fetching/data_processing_csv.py=utf-8
+encoding//com/data/fetching/data_processing_csv_per_magasin.py=utf-8
+encoding//com/data/fetching/data_processing_linking_counter_csv.py=utf-8
+encoding//com/data/fetching/data_processing_picture_per_magasin.py=utf-8
+encoding//com/data/fetching/data_processing_pictures.py=utf-8
+encoding//com/data/fetching/kriter_data_processing_bigfile_csv.py=utf-8
+encoding//com/data/fetching/kriter_data_processing_linking_counter_csv.py=utf-8
+encoding//com/data/fetching/kriter_data_processing_linking_counter_pictures.py=utf-8

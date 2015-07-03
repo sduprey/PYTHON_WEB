@@ -149,7 +149,7 @@ print("saving the tf/idf matrix for our training data")
 my_saving_training_matrix_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_training_matrix.bin'
 save_sparse_csr(my_saving_training_matrix_file,X_train)
 
-my_saving_training_outputvector_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_restrained_data_training_output_vector.bin'
+my_saving_training_outputvector_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_output_vector.bin'
 save_output(my_saving_training_outputvector_file,y_train)
 
 print("Loading all testing... ")

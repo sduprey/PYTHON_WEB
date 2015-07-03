@@ -1,0 +1,19 @@
+'''
+Created on 3 Jul 2015
+
+@author: sduprey
+'''
+
+class my_online_learner:
+
+    def __init__(self,train='/home/sduprey/My_Data/My_Tradeshift/my_training_data/train.csv',label = '/home/sduprey/My_Data/My_Tradeshift/my_training_datadata/trainLabels.csv',test= '/home/sduprey/My_Data/My_Tradeshift/my_training_data/rainLabels.csv',D= 2 ** 24,alpha= .1,predict_y14=True,output_file='/home/sduprey/My_Data/My_Tradeshift/submissions/submissiontk36x.csv'):
+        self.train=train
+        self.label=label
+        self.test=test
+        self.D=D
+        self.alpha=alpha
+        self.hash_cols = [131,132,133,136,35,65,61,62,91,92,142,3,4,61,34,91,94,95]
+        self.hh=len(self.hash_cols)
+        self.hh=self.hh*(self.hh-1)/2+1
+        self.predict_y14=predict_y14
+        self.output_file=output_file

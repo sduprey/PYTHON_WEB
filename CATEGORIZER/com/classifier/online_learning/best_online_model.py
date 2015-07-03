@@ -198,7 +198,7 @@ class best_online_model:
             loss += loss_y14  # the loss of y14, logloss is never zero
             loss2 += loss_y14
     # print out progress, so that we know everything is working
-            if ID % 10000 == 0:
+            if ID % 100 == 0:
         
                 print('%s encountered: %d current logloss: %f  logloss2: %f' % (
                     datetime.now(), ID, (loss/33.)/ID,(loss2/33.)/ID))

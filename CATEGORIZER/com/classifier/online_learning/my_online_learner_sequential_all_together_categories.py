@@ -29,23 +29,25 @@ class my_online_learner_all_together_category:
         rowDatas = []
         rowNumber = 0
         for t, line in enumerate(open(path)):
+#            if (t<(3*51164)) :
+#                continue
             if t%3 == 0 :
                 print('Row number '+line)
                 rowNumber = int(line.rstrip()) 
-#                if rowNumber==51164 :
-#                    print("Be cautious")
             if t%3 == 1 :
+                line=line.rstrip()
                 print("My indices"+line)
                 if not line :
-                    indices =  [int(l) for l in line.rstrip().split(',')]     
-                else :
                     indices = []
+                else :
+                    indices =  [int(l) for l in line.split(',')]                         
             if t%3 == 2 :
+                line=line.rstrip()
                 print('My row data '+line)
                 if not line :
-                    rowDatas =  [float(l) for l in line.rstrip().split(',')]     
-                else :
                     rowDatas = []
+                else :
+                    rowDatas =  [float(l) for l in line.split(',')]     
                     
                 if label_path:
                 # use float() to prevent future type casting, [1:] to ignore id
@@ -127,9 +129,9 @@ if __name__ == "__main__":
     best_online = my_online_learner_all_together_category(train="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_training_matrix.csv",label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_output_vector.csv',test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 , alpha= .1, output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv", nb_categories=nb_categories)
     # getting the weighted model for our category
     w = best_online.train_predict()
-    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv"
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sequential_all_together_submission.csv"
     print("Saving model to our file : " +filename_category_model)
-    best_online.save_model(filename_category_model, w)
+    best_online.save_model(filename_category_model, np.asarray(w))
     
     # saving the model for the category number
     

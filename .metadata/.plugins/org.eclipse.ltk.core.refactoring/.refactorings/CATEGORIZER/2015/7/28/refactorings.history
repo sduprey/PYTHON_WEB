@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;my_online_learner.py&apos; to &apos;online_learning&apos;&#x0A;- Original project: &apos;CATEGORIZER&apos;&#x0A;- Destination element: &apos;online_learning&apos;&#x0A;- Original element: &apos;my_online_learner.py&apos;" description="Copy file" element1="com/classifier/online_learning/my_online_learner.py" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1436165732242" target="/CATEGORIZER/com/classifier/online_learning" units="0" version="1.0"/>
+</session>

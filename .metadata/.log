@@ -927,3 +927,183 @@ org.python.pydev.editor.refactoring.TooManyMatchesException: Too Many matches (9
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.python.pydev.debug 4 4 2015-07-03 14:33:16.942
+!MESSAGE Error fetching a variable
+!STACK 1
+org.eclipse.core.runtime.CoreException: pydevd error:Error evaluating expression Traceback (most recent call last):
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_comm.py", line 1032, in doIt
+    result = pydevd_vars.evaluateExpression(self.thread_id, self.frame_id, self.expression, self.doExec)
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_vars.py", line 287, in evaluateExpression
+    expression = str(expression.replace('@LINE@', '\n'))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3343-3386: ordinal not in range(128)
+
+	at org.python.pydev.debug.model.remote.EvaluateExpressionCommand.getResponse(EvaluateExpressionCommand.java:76)
+	at org.python.pydev.debug.model.PyWatchExpressionDelegate.commandComplete(PyWatchExpressionDelegate.java:118)
+	at org.python.pydev.debug.model.remote.AbstractDebuggerCommand.processResponse(AbstractDebuggerCommand.java:147)
+	at org.python.pydev.debug.model.remote.DebuggerReader.processCommand(DebuggerReader.java:118)
+	at org.python.pydev.debug.model.remote.DebuggerReader.run(DebuggerReader.java:140)
+	at java.lang.Thread.run(Thread.java:745)
+!SUBENTRY 1 org.python.pydev.debug 4 4 2015-07-03 14:33:16.942
+!MESSAGE pydevd error:Error evaluating expression Traceback (most recent call last):
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_comm.py", line 1032, in doIt
+    result = pydevd_vars.evaluateExpression(self.thread_id, self.frame_id, self.expression, self.doExec)
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_vars.py", line 287, in evaluateExpression
+    expression = str(expression.replace('@LINE@', '\n'))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3343-3386: ordinal not in range(128)
+
+
+!ENTRY org.python.pydev.debug 4 4 2015-07-03 14:33:17.042
+!MESSAGE Error fetching a variable
+!STACK 1
+org.eclipse.core.runtime.CoreException: pydevd error:Error evaluating expression Traceback (most recent call last):
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_comm.py", line 1032, in doIt
+    result = pydevd_vars.evaluateExpression(self.thread_id, self.frame_id, self.expression, self.doExec)
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_vars.py", line 287, in evaluateExpression
+    expression = str(expression.replace('@LINE@', '\n'))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3343-3386: ordinal not in range(128)
+
+	at org.python.pydev.debug.model.remote.EvaluateExpressionCommand.getResponse(EvaluateExpressionCommand.java:76)
+	at org.python.pydev.debug.model.PyWatchExpressionDelegate.commandComplete(PyWatchExpressionDelegate.java:118)
+	at org.python.pydev.debug.model.remote.AbstractDebuggerCommand.processResponse(AbstractDebuggerCommand.java:147)
+	at org.python.pydev.debug.model.remote.DebuggerReader.processCommand(DebuggerReader.java:118)
+	at org.python.pydev.debug.model.remote.DebuggerReader.run(DebuggerReader.java:140)
+	at java.lang.Thread.run(Thread.java:745)
+!SUBENTRY 1 org.python.pydev.debug 4 4 2015-07-03 14:33:17.042
+!MESSAGE pydevd error:Error evaluating expression Traceback (most recent call last):
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_comm.py", line 1032, in doIt
+    result = pydevd_vars.evaluateExpression(self.thread_id, self.frame_id, self.expression, self.doExec)
+  File "/home/sduprey/My_Programs/eclipse_for_python/plugins/org.python.pydev_3.9.0.201411111611/pysrc/pydevd_vars.py", line 287, in evaluateExpression
+    expression = str(expression.replace('@LINE@', '\n'))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 3343-3386: ordinal not in range(128)
+
+
+!ENTRY org.eclipse.jface 2 0 2015-07-03 14:37:50.179
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-07-03 14:37:50.179
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37c73f8e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@acfaec6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2015-07-06 08:45:22.677 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-07-06 08:45:30.880
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.jface 2 0 2015-07-06 08:53:34.064
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-07-06 08:53:34.065
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b45ca23,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@62d9de3b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d8d2630,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2015-07-06 09:09:17.370
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-07-06 09:09:17.370
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@33b7c653,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@663d8dab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2015-07-06 09:50:36.062 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-07-06 09:50:57.734
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.jface 2 0 2015-07-06 10:12:17.359
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-07-06 10:12:17.359
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3922e5d3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@221e9cf3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)

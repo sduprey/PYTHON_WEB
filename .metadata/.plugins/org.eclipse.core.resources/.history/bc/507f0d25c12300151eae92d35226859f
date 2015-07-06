@@ -1,0 +1,138 @@
+'''
+Created on 3 Jul 2015
+
+@author: sduprey
+'''
+
+from datetime import datetime
+import numpy as np
+from math import log, exp, sqrt,factorial
+
+class my_online_learner_all_together_category:
+    def __init__(self,train="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_training_matrix.csv",label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_output_vector.csv',test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 ,alpha= .1 ,output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv" ,nb_categories=nb_categories):
+        self.train=train
+        self.label=label
+        self.test=test
+        self.alpha=alpha
+        self.output_file=output_file
+        self.nb_categories=nb_categories
+        self.D=D
+        
+    def save_model(self, filename,vector):
+        np.savez(filename,data =vector)
+    
+    def data(self, path, label_path=None):
+        if label_path:
+            label=open(label_path)
+            
+        indices = []
+        rowDatas = []
+        rowNumber = 0
+        for t, line in enumerate(open(path)):
+            if t%3 == 0 :
+                print('Row number '+line)
+                rowNumber = int(line.rstrip()) 
+#                if rowNumber==51164 :
+#                    print("Be cautious")
+            if t%3 == 1 :
+                print("My indices"+line)
+                if not line :
+                    indices =  [int(l) for l in line.rstrip().split(',')]     
+                else :
+                    indices = []
+            if t%3 == 2 :
+                print('My row data '+line)
+                if not line :
+                    rowDatas =  [float(l) for l in line.rstrip().split(',')]     
+                else :
+                    rowDatas = []
+                    
+                if label_path:
+                # use float() to prevent future type casting, [1:] to ignore id
+                    y = int(label.readline().rstrip())
+                yield(rowNumber, indices, rowDatas, y)  if label_path else (rowNumber, indices, rowDatas)
+    # B. Bounded logloss
+    # INPUT:
+    #     p: our prediction
+    #     y: real answer
+    # OUTPUT
+    #     bounded logarithmic loss of p given y
+    def logloss(self,p, y):
+        p = max(min(p, 1. - 10e-15), 10e-15)
+        return -log(p) if y == 1. else -log(1. - p)
+    
+    def predict(self, indices, rowdata, w):
+        wTx = 0.
+        data_counter = 0
+        for indice in indices :
+            wTx += w[indice]*rowdata[data_counter]
+            data_counter=data_counter+1
+        return 1. / (1. + exp(-max(min(wTx, 20.), -20.)))  # bounded sigmoid
+    
+    def update_w(self, w, n, indices, rowDatas, p, y):        
+        for indice in indices :
+            # alpha / (sqrt(n) + 1) is the adaptive learning rate heuristic
+            # (p - y) * x[i] is the current gradient
+            # note that in our case, if i in x then x[i] = 1
+            w[indice] -= (p - y) * self.alpha / (sqrt(n[indice]) + 1.)
+            n[indice] += 1.
+        return w, n
+
+
+    def train_predict(self):        
+        K = [(k+1) for k in range(self.nb_categories)]
+        # initializes our model, all 5789 nb_categories of them
+        # one supplementary element in the array for the category we predict
+        # we store a model for each of our categories
+        w = [[0.] * (self.D+1)  for k in K]
+        n = [[0.] * (self.D+1)  for k in K]
+
+        loss = 0.
+        for rowNumber, indices, rowDatas, label in self.data(self.train, self.label):
+            print('Dealing with row number '+str(rowNumber))
+            # dealing with the category K
+            for k in K :
+                prediction = self.predict(indices, rowDatas, w[k])
+                good_answer = (label == k)
+                loss += self.logloss(prediction, good_answer)
+                self.update_w(w[k], n[k], indices, rowDatas, prediction, good_answer)
+                # print out progress, so that we know everything is working
+                if rowNumber % 100 == 0 & rowNumber !=  0 :
+                    print('%s encountered: %d current logloss: %f' % (datetime.now(), rowNumber, (loss/33.)/rowNumber))
+   
+        return w
+   
+           
+#        with open(self.output_file, 'w') as outfile:
+#            outfile.write('id_label,pred\n')
+#   
+#            for ID, x in self.data(self.test):
+#                for k in K:
+#                    p = self.predict(x, w[k])
+#                    if k<13:
+#                        x[146+self.hh+k]=p
+#                    else:
+#                        x[145+self.hh+k]=p
+#                for k in K:
+#                    p = self.predict2(x, w[k])
+#                    outfile.write('%s_y%d,%s\n' % (ID, k+1, str(p)))
+#                    if k == 12 and self.predict_y14:
+#                        outfile.write('%s_y14,0.0\n' % ID)
+#        print('Done, elapsed time: %s' % str(datetime.now() - start))
+
+if __name__ == "__main__":
+    nb_categories = 5789
+    best_online = my_online_learner_all_together_category(train="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_training_matrix.csv",label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_output_vector.csv',test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 , alpha= .1, output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv", nb_categories)
+        # getting the weighted model for our category
+    w = best_online.train_predict()
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv"
+    print("Saving model to our file : " +filename_category_model)
+    best_online.save_model(filename_category_model, w)
+    
+    # saving the model for the category number
+    
+    
+    
+    
+    
+    

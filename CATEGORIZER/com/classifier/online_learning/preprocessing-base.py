@@ -18,7 +18,8 @@ def pre_processing_base(data_dir, data_base_dir):
     
     train = pd.read_csv(data_dir + 'train.csv')
     test = pd.read_csv(data_dir + 'test.csv')
-    pickle.dump(np.array(test[['id']]),open(data_base_dir+"test_id.p","wb"))
+    my_array_to_dump = np.array(test[['id']]) 
+    pickle.dump(my_array_to_dump,open(data_base_dir+"test_id.p","wb"))
 
     # encode 10 hashed features into sparse matrix 
     vec = DictVectorizer()
@@ -27,8 +28,13 @@ def pre_processing_base(data_dir, data_base_dir):
     train.replace('NO', 0, inplace = True)
     test.replace('YES', 1, inplace = True)
     test.replace('NO', 0, inplace = True)
+    my_columns_names = train.columns
+    type(my_columns_names)
     for name in train.columns :    
         if name.startswith('x') :
+            #tmp =map(lambda x: str(type(x)), train[name])
+            #tmp2 = Counter(tmp).items()
+            #results,_  = max(tmp2, key = lambda x: x[1],)
             column_type, _ = max(Counter(map(lambda x: str(type(x)), train[name])).items(), key = lambda x: x[1])
         # LOL expression
             if column_type == str(str) :

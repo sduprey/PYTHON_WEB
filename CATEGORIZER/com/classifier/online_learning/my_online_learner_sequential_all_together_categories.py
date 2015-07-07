@@ -6,7 +6,7 @@ Created on 3 Jul 2015
 
 from datetime import datetime
 import numpy as np
-from math import log, exp, sqrt,factorial
+from math import log, exp, sqrt
 
 class my_online_learner_all_together_category:
     def __init__(self,train="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_training_matrix.csv",label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_output_vector.csv',test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 ,alpha= .1 ,output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv" ,nb_categories=5789):

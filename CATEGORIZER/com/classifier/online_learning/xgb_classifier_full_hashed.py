@@ -38,6 +38,7 @@ class xgb_classifier_full_hashed :
         watchlist = [ (xgmat_train,'train') ]
         num_round = self.num_round
     
+        print('Training xgd model')
         bst = xgb.train( plst, xgmat_train, num_round, watchlist )
         xgmat_test = xgb.DMatrix(X_test,missing=-999)
     
@@ -51,6 +52,7 @@ class xgb_classifier_full_hashed :
             xgmat_test.set_base_margin(tmp_test)
             bst = xgb.train(param, xgmat_train, self.exist_num_round, watchlist )
 
+        print('Predicting on the test samlpe using the xgd model')
         ypred = bst.predict(xgmat_test)
         return ypred
     
@@ -58,10 +60,13 @@ class xgb_classifier_full_hashed :
     def train_predict_all_labels(self,X_train,y_train,X_test):
         xgb_predict=[]
         for i in range(self.nb_categories) :
-            #y = y_train[:, i]    
-            y = (y_train == i)
+            y_train[y_train == (i+1)] = 1
+            y_train[y_train != (i+1)] = 0
+            print('Dealing with category : '+str(i+1))
+            print('Category size : '+str(sum(y_train)))
+            
             #predicted = None            
-            predicted = self.train_predict(X_train,y,X_test)
+            predicted = self.train_predict(X_train, y_train, X_test)
             xgb_predict.append(predicted)
         return np.column_stack(xgb_predict)
     

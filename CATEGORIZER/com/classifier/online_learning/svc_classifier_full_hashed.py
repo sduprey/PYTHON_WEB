@@ -12,7 +12,7 @@ class svc_classifier_full_hashed :
         self.nb_categories=nb_categories
     
     def train_predict(self,X_train,y_train,X_test):        
-        clf=LinearSVC()
+        clf=LinearSVC(C=0.17)
         print('Training linear support vector machine model')
         fitted_model = clf.fit(X_train, y_train)
         print('Predicting on the test samlpe using linear support vector machine model')

@@ -46,7 +46,7 @@ if __name__ == "__main__":
 #    nb_categories = 5789
 #    D=1048576
 
-    sgd_all_categories = my_sgd_classifier_all_together_category(D=5789, nb_categories=1048576)
+    sgd_all_categories = my_sgd_classifier_all_together_category(D=1048576, nb_categories=5789)
     
     my_saving_training_matrix_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_training_matrix.bin.npz'
     Xtrain = sgd_all_categories.load_sparse_csr(my_saving_training_matrix_file)

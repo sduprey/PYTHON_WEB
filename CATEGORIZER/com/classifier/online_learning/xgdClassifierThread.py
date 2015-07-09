@@ -41,7 +41,7 @@ def stepping_through_categories(threadName, Xtrain, ytrain, Xtest, my_category_c
     print(ytrain.shape[0])
 
     print(threadName +' Training and predicting xgb classifier for each category')
-    xgb_clf=xgb_classifier_full_hashed(eta=0.3,min_child_weight=6,depth=100,num_round=20,threads=16,exist_prediction=False,exist_num_round=20, nb_categories=5789) 
+    xgb_clf=xgb_classifier_full_hashed(eta=0.3,min_child_weight=6,depth=100,num_round=20,threads=30,exist_prediction=False,exist_num_round=20, nb_categories=5789) 
     my_thread_X_test_xgb_pred = xgb_clf.train_predict_all_specific_labels(threadName, my_category_chunk, Xtrain, ytrain,Xtest)
     
     filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_parallel_all_together_submission"+threadName+".csv"

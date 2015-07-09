@@ -78,7 +78,7 @@ if __name__ == "__main__":
     #Xtrain, ytrain, Xtest have been loaded inside the main thread
     # now we split the categories between 200 threads to go faster
 
-    chunk_size = 30
+    chunk_size = 500
     my_chunks = list(chunks(range(nb_categories), chunk_size))
     nb_pieces_chunk = len(my_chunks)
     print('Delegating to '+str(nb_pieces_chunk) + ' threads ')

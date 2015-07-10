@@ -1,36 +1,36 @@
 '''
-Created on 3 Jul 2015
+Created on 6 Jul 2015
 
 @author: sduprey
 '''
 
 from datetime import datetime
 import numpy as np
-from math import log, exp, sqrt
+from math import log, exp, sqrt,factorial
 
-class my_online_learner_restrained_tfidf_all_together_category:
-    def __init__(self,train='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_training_matrix.csv',label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_restrained_output_vector.csv',test='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_testing_matrix.csv', D=1048576 ,alpha= .1 ,output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_online_submission.csv" ,nb_categories=5789):
-        self.train=train
-        self.label=label
+class submission_sequential_writer_all_together_category:
+    def __init__(self,test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 , saved_weights_output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv.npz", output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/sequential_all_together_final_submission.csv" ,nb_categories=5789):
         self.test=test
-        self.alpha=alpha
-        self.output_file=output_file
+        self.saved_weights_output_file=saved_weights_output_file
+        self.output_file = output_file
         self.nb_categories=nb_categories
         self.D=D
+        self.w=[]
         
+    def load_sequential_all_together_model(self):
+        loader = np.load(self.saved_weights_output_file)
+        return loader['data']
+    
     def save_model(self, filename,vector):
         np.savez(filename,data =vector)
     
-    def data(self, path, label_path=None):
-        if label_path:
-            label=open(label_path)
-            
+    def data_test(self, path):            
         indices = []
         rowDatas = []
         rowNumber = 0
         for t, line in enumerate(open(path)):
-#            if (t<(3*51164)) :
-#                continue
+            #if t == 250000 :
+            #    break
             if t%3 == 0 :
                 print('Row number '+line)
                 rowNumber = int(line.rstrip()) 
@@ -47,12 +47,8 @@ class my_online_learner_restrained_tfidf_all_together_category:
                 if not line :
                     rowDatas = []
                 else :
-                    rowDatas =  [float(l) for l in line.split(',')]     
-                    
-                if label_path:
-                # use float() to prevent future type casting, [1:] to ignore id
-                    y = int(label.readline().rstrip())
-                yield(rowNumber, indices, rowDatas, y)  if label_path else (rowNumber, indices, rowDatas)
+                    rowDatas =  [float(l) for l in line.split(',')]          
+                yield(rowNumber, indices, rowDatas)
     # B. Bounded logloss
     # INPUT:
     #     p: our prediction
@@ -105,39 +101,47 @@ class my_online_learner_restrained_tfidf_all_together_category:
                     print('%s encountered: %d current logloss: %f' % (datetime.now(), rowNumber, (loss/33.)/rowNumber))
    
         return w
+    
+    def write_submission_file(self):
+        with open(self.output_file, 'w') as outfile:
+            outfile.write('id_label,pred\n')
+            for rowNumber, indices, rowDatas in self.data_test(self.test):
+                print("Writing row number : "+str(rowNumber))
+#                # former way : column writing
+#                for k in range(self.nb_categories) :
+#                    p = self.predict(indices, rowDatas, self.w[k])
+#                    outfile.write('%s_y%d,%s\n' % (rowNumber, k+1, str(p)))
+#                # new way : row writing
+                P=[]
+                for k in range(self.nb_categories) :
+                    p = self.predict(indices, rowDatas, self.w[k])
+                    P.append(str(p))
+                    
+                outfile.write(str(rowNumber)+";"+";".join(P)+"\n");
    
-           
-#        with open(self.output_file, 'w') as outfile:
-#            outfile.write('id_label,pred\n')
-#   
-#            for ID, x in self.data(self.test):
-#                for k in K:
-#                    p = self.predict(x, w[k])
-#                    if k<13:
-#                        x[146+self.hh+k]=p
-#                    else:
-#                        x[145+self.hh+k]=p
+   
+#            for ID, x in self.data_test(self.test):
+#                for k in range(self.nb_categories) :
+#                    p = self.predict(x, self.w[k])
+#                    outfile.write('%s_y%d,%s\n' % (ID, k+1, str(p)))
 #                for k in K:
 #                    p = self.predict2(x, w[k])
-#                    outfile.write('%s_y%d,%s\n' % (ID, k+1, str(p)))
 #                    if k == 12 and self.predict_y14:
 #                        outfile.write('%s_y14,0.0\n' % ID)
-#        print('Done, elapsed time: %s' % str(datetime.now() - start))
 
 if __name__ == "__main__":
-    
     nb_categories = 5789
-    best_online_tfidf = my_online_learner_restrained_tfidf_all_together_category(train='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_training_matrix.csv', label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_restrained_output_vector.csv', test='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_testing_matrix.csv', D=1048576 , alpha= .1, output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_online_submission.csv", nb_categories=nb_categories)
+    my_output_file = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sequential_all_together_final_submission.csv"
+    my_saved_weights_output_file = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sequential_all_together_submission.csv.npz"
+    online_subscription_writer = submission_sequential_writer_all_together_category(test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 , saved_weights_output_file=my_saved_weights_output_file, output_file=my_output_file, nb_categories=nb_categories)
     # getting the weighted model for our category
-    w = best_online_tfidf.train_predict()
-    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sequential_restrained_tfidf_online_all_together_submission.csv"
-    print("Saving model to our file : " +filename_category_model)
-    best_online_tfidf.save_model(filename_category_model, np.asarray(w))
-    
-    # saving the model for the category number
-    
-    
-    
-    
-    
-    
+    print("Loading previously saved model from the following file : " +my_saved_weights_output_file)
+    online_subscription_writer.w = online_subscription_writer.load_sequential_all_together_model()
+    print(online_subscription_writer.w.shape[0])
+    print(online_subscription_writer.w.shape[1])
+    print(type(online_subscription_writer.w))
+     
+    # predicting and writing for writing the submission file
+    online_subscription_writer.write_submission_file()
+
+   

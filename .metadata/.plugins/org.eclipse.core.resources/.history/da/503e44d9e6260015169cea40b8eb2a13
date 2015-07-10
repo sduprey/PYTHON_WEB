@@ -9,7 +9,7 @@ import numpy as np
 from math import log, exp, sqrt
 
 class my_online_learner_restrained_tfidf_all_together_category:
-    def __init__(self,train='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_training_matrix.csv',label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_restrained_output_vector.csv',test='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_testing_matrix.csv', D=1048576 ,alpha= .1 ,output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_online_submission.csv" ,nb_categories=5789):
+    def __init__(self,train='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_training_matrix.csv',label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_restrained_output_vector.csv',test='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_testing_matrix.csv', D=1048576 ,alpha= .1 ,output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv" ,nb_categories=5789):
         self.train=train
         self.label=label
         self.test=test

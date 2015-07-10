@@ -1,1 +1,7 @@
-DELSTRcom.classifier.online_learning.sequential_restrained_tfidf_all_together_subscription
+INSTUPcom.classifier.online_learning.my_svc_sequential_tfidf_restrained_all_together_categories_output_building
+/home/sduprey/My_Code/My_New_Python_Workspace/CATEGORIZER/com/classifier/online_learning/my_svc_sequential_tfidf_restrained_all_together_categories_output_building.py
+INFOS:&&2|1|2|0&&3|3|2|0&&3|4|2|0
+load_previously_saved_predictions=1
+predictions=4
+filename_category_model=3
+com.classifier.online_learning.my_svc_sequential_tfidf_restrained_all_together_categories_output_building=2

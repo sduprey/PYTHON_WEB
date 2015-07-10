@@ -8,8 +8,8 @@ from datetime import datetime
 import numpy as np
 from math import log, exp, sqrt
 
-class my_online_learner_all_together_category:
-    def __init__(self,train="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_training_matrix.csv",label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_output_vector.csv',test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 ,alpha= .1 ,output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv" ,nb_categories=5789):
+class my_online_learner_restrained_tfidf_all_together_category:
+    def __init__(self,train='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_training_matrix.csv',label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_restrained_output_vector.csv',test='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_testing_matrix.csv', D=1048576 ,alpha= .1 ,output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv" ,nb_categories=5789):
         self.train=train
         self.label=label
         self.test=test
@@ -125,13 +125,14 @@ class my_online_learner_all_together_category:
 #        print('Done, elapsed time: %s' % str(datetime.now() - start))
 
 if __name__ == "__main__":
+    
     nb_categories = 5789
-    best_online = my_online_learner_all_together_category(train="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_training_matrix.csv",label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_output_vector.csv',test="/home/sduprey/My_Data/My_Cdiscount_Challenge/full_hashed_testing_matrix.csv", D=1048576 , alpha= .1, output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/submission.csv", nb_categories=nb_categories)
+    best_online_tfidf = my_online_learner_restrained_tfidf_all_together_category(train='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_training_matrix.csv', label = '/home/sduprey/My_Data/My_Cdiscount_Challenge/hashed_data_training_restrained_output_vector.csv', test='/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_testing_matrix.csv', D=1048576 , alpha= .1, output_file="/home/sduprey/My_Data/My_Cdiscount_Challenge/restrained_tfidf_online_submission.csv", nb_categories=nb_categories)
     # getting the weighted model for our category
-    w = best_online.train_predict()
-    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sequential_all_together_submission.csv"
+    w = best_online_tfidf.train_predict()
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sequential_restrained_tfidf_online_all_together_submission.csv"
     print("Saving model to our file : " +filename_category_model)
-    best_online.save_model(filename_category_model, np.asarray(w))
+    best_online_tfidf.save_model(filename_category_model, np.asarray(w))
     
     # saving the model for the category number
     

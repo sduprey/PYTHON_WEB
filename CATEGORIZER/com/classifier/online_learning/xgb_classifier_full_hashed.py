@@ -54,7 +54,8 @@ class xgb_classifier_full_hashed :
 
         print('Predicting on the test samlpe using the xgd model')
         ypred = bst.predict(xgmat_test)
-        return ypred
+        ypretrain =  bst.predict(xgmat_train)
+        return ypred, ypretrain
 
     def train_predict_all_specific_labels(self,thread_name, my_category_chunk ,X_train ,y_train ,X_test):
         xgb_predict=[]        
@@ -71,7 +72,8 @@ class xgb_classifier_full_hashed :
 
     
     def train_predict_all_labels(self,X_train,y_train,X_test):
-        xgb_predict=[]        
+        xgb_predict_test=[]   
+        xgb_predict_train=[]     
         for i in range(self.nb_categories) :
             y_i=np.zeros(y_train.shape, dtype=np.int)
             y_i[y_train == (i+1)] = 1
@@ -79,9 +81,10 @@ class xgb_classifier_full_hashed :
             print('Dealing with category : '+str(i+1))
             print('Category size : '+str(sum(y_i)))            
             #predicting the category i using our xgb model
-            predicted = self.train_predict(X_train, y_i, X_test)
-            xgb_predict.append(predicted)
-        return np.column_stack(xgb_predict)
+            predicted, predicted_train = self.train_predict(X_train, y_i, X_test)
+            xgb_predict_test.append(predicted)
+            xgb_predict_train.append(predicted_train)
+        return np.column_stack(xgb_predict_test), np.column_stack(xgb_predict_train)
     
     
         

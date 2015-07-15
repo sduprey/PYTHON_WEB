@@ -1,0 +1,14 @@
+INSTUPcom.comparator.cannib_checker
+/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0
+sdx=3
+count=7
+ratio=11
+kwsdx=9
+parsesdx=6
+kwlf=10
+lf=1
+parself=5
+i=8
+out=4
+com.comparator.cannib_checker=2

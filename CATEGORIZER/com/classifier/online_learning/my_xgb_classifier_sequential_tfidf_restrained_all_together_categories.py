@@ -33,8 +33,8 @@ class my_xgb_classifier_all_together_category:
         #xgb_clf=xgb_classifier_full_hashed(eta=0.3,min_child_weight=6,depth=100,num_round=20,threads=16,exist_prediction=True,exist_num_round=20, nb_categories=self.nb_categories)
         # we here ignore the real output : exist_prediction = False
         xgb_clf=xgb_classifier_full_hashed(eta=0.3,min_child_weight=6,depth=100,num_round=20,threads=150,exist_prediction=False,exist_num_round=20, nb_categories=self.nb_categories) 
-        X_test_xgb_pred = xgb_clf.train_predict_all_labels(Xtrain, ytrain,Xtest)
-        return X_test_xgb_pred
+        X_test_xgb_pred, X_train_xgb_pred = xgb_clf.train_predict_all_labels(Xtrain, ytrain,Xtest)
+        return X_test_xgb_pred, X_train_xgb_pred
         
  
 if __name__ == "__main__":
@@ -69,13 +69,16 @@ if __name__ == "__main__":
       
     # getting the weighted model for our category
     print('Training and predicting xgb classifier for each category')
-    my_xgb_predictions = xgb_all_categories.train_predict_all_labels(Xtrain, ytrain, Xtest)
+    my_xgb_predictions_test, my_xgb_predictions_train = xgb_all_categories.train_predict_all_labels(Xtrain, ytrain, Xtest)
     
-    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_submission.csv"
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_test_submission.csv"
     print("Saving model to our file : " + filename_category_model)
-    xgb_all_categories.save_model(filename_category_model, my_xgb_predictions)
+    xgb_all_categories.save_model(filename_category_model, my_xgb_predictions_test)
     
-    # saving the model for the category number
+    
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_train_submission.csv"
+    print("Saving model to our file : " + filename_category_model)
+    xgb_all_categories.save_model(filename_category_model, my_xgb_predictions_train)
     
     
     

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_EE8qgCboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_EE8qgSboEeW9ROXCOc_cyw" bindingContexts="_EFD_diboEeW9ROXCOc_cyw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_svc_sequential_tfidf_restrained_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_svc_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_svc_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_svc_sequential_tfidf_restrained_all_together_categories_output_building.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_svc_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_svc_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;sequential_restrained_tfidf_all_together_subscription.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/sequential_restrained_tfidf_all_together_subscription.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/sequential_restrained_tfidf_all_together_subscription.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_online_learner_sequential_tf_idf_restrained_data_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_online_learner_sequential_tf_idf_restrained_data_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_online_learner_sequential_tf_idf_restrained_data_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;translating_restrained_data_tfidf_predictors_saved.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;sequential_all_together_subscription.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/sequential_all_together_subscription.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/sequential_all_together_subscription.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_online_learner_sequential_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_online_learner_sequential_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_online_learner_sequential_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;translating_fulldata_hashed_predictores_saved.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/translating_fulldata_hashed_predictores_saved.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/translating_fulldata_hashed_predictores_saved.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;loading_fulldata_hashed_predictores_saved.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/loading_fulldata_hashed_predictores_saved.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/loading_fulldata_hashed_predictores_saved.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;computing_and_mapping_the_ouput_restrained_data.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;restrained_data_computing_and_saving_tfidf.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;computing_and_mapping_the_ouput.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;computing_and_saving_tfidf.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/computing_and_saving_tfidf.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/computing_and_saving_tfidf.py&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;cannib_checker.py&quot; tooltip=&quot;LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py&quot;>&#xA;&lt;persistable path=&quot;/LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; tooltip=&quot;LEVENSHTEIN_COMPARATOR/com/comparator/__init__.py&quot;>&#xA;&lt;persistable path=&quot;/LEVENSHTEIN_COMPARATOR/com/comparator/__init__.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;xgdClassifierThread.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/xgdClassifierThread.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/xgdClassifierThread.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_parallel_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_parallel_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_parallel_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;fast_solution.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/fast_solution.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/fast_solution.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;sgd_classifier_full_hashed.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/sgd_classifier_full_hashed.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/sgd_classifier_full_hashed.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories_output_building.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;xgb_classifier_full_hashed.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/xgb_classifier_full_hashed.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/xgb_classifier_full_hashed.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_sequential_tfidf_restrained_all_together_categories_output_building.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;restrained_data_computing_and_saving_tfidf.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;computing_and_mapping_the_ouput_restrained_data.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;translating_restrained_data_tfidf_predictors_saved.py&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;>&#xA;&lt;persistable path=&quot;/CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_EE8qgSboEeW9ROXCOc_cyw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_EE8qgiboEeW9ROXCOc_cyw" label="%trimmedwindow.label.eclipseSDK" x="0" y="24" width="1411" height="772">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_EE8qgSboEeW9ROXCOc_cyw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_EE8qgiboEeW9ROXCOc_cyw" label="%trimmedwindow.label.eclipseSDK" x="102" y="24" width="1407" height="772">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1435822119610"/>
     <tags>topLevel</tags>
-    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qgiboEeW9ROXCOc_cyw" selectedElement="_EE8qgyboEeW9ROXCOc_cyw" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_EE8qgyboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_EE8qhCboEeW9ROXCOc_cyw">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_EE8qgyboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_tWZ9cCsCEeWaM5B-UHBblQ">
         <children xsi:type="advanced:Perspective" xmi:id="_EE8qhCboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.ui.JavaPerspective" selectedElement="_EE8qhSboEeW9ROXCOc_cyw" label="Java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/jperspective.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
           <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
@@ -72,11 +71,12 @@
           <tags>persp.viewSC:org.eclipse.wb.core.StructureView</tags>
           <tags>persp.viewSC:org.eclipse.wb.core.PaletteView</tags>
           <tags>persp.actionSet:org.eclipse.debug.ui.debugActionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qhSboEeW9ROXCOc_cyw" selectedElement="_EE8qkSboEeW9ROXCOc_cyw" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qhiboEeW9ROXCOc_cyw" containerData="3041" selectedElement="_EE8qhyboEeW9ROXCOc_cyw">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qhSboEeW9ROXCOc_cyw" selectedElement="_EE8qhiboEeW9ROXCOc_cyw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qhiboEeW9ROXCOc_cyw" containerData="2712" selectedElement="_EE8qhyboEeW9ROXCOc_cyw">
               <children xsi:type="basic:PartStack" xmi:id="_EE8qhyboEeW9ROXCOc_cyw" elementId="left" containerData="6000" selectedElement="_EE8qiCboEeW9ROXCOc_cyw">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qiCboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_EE_G6iboEeW9ROXCOc_cyw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qiSboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_EE_uIiboEeW9ROXCOc_cyw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qiiboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_EE_uIyboEeW9ROXCOc_cyw"/>
@@ -90,8 +90,8 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qkCboEeW9ROXCOc_cyw" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_EFAVFyboEeW9ROXCOc_cyw"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qkSboEeW9ROXCOc_cyw" containerData="6959" selectedElement="_EE8qkiboEeW9ROXCOc_cyw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qkiboEeW9ROXCOc_cyw" containerData="8544" selectedElement="_EE8qkyboEeW9ROXCOc_cyw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qkSboEeW9ROXCOc_cyw" containerData="7288" selectedElement="_EE8qkiboEeW9ROXCOc_cyw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qkiboEeW9ROXCOc_cyw" containerData="7665" selectedElement="_EE8qkyboEeW9ROXCOc_cyw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qkyboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_EE-ftSboEeW9ROXCOc_cyw"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qlCboEeW9ROXCOc_cyw" containerData="1000">
                   <children xsi:type="basic:PartStack" xmi:id="_EE8qlSboEeW9ROXCOc_cyw" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" containerData="4945" selectedElement="_EE8qliboEeW9ROXCOc_cyw">
@@ -107,9 +107,10 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_EE8qmyboEeW9ROXCOc_cyw" elementId="bottom" containerData="1456" selectedElement="_EE8qoCboEeW9ROXCOc_cyw">
+              <children xsi:type="basic:PartStack" xmi:id="_EE8qmyboEeW9ROXCOc_cyw" elementId="bottom" containerData="2335" selectedElement="_EE8qoCboEeW9ROXCOc_cyw">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qnCboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.views.ProblemView" ref="_EE_uJSboEeW9ROXCOc_cyw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qnSboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.ui.JavadocView" ref="_EE_uLSboEeW9ROXCOc_cyw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qniboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.ui.SourceView" ref="_EFAU4CboEeW9ROXCOc_cyw"/>
@@ -162,8 +163,8 @@
           <tags>persp.showIn:org.eclipse.ui.views.ContentOutline</tags>
           <tags>persp.actionSet:org.python.pydev.pyPropertyTrace</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qpSboEeW9ROXCOc_cyw" selectedElement="_EE8qpiboEeW9ROXCOc_cyw">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qpiboEeW9ROXCOc_cyw" containerData="9000" selectedElement="_EE8qsiboEeW9ROXCOc_cyw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qpyboEeW9ROXCOc_cyw" containerData="1724" selectedElement="_EE8qqCboEeW9ROXCOc_cyw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qpiboEeW9ROXCOc_cyw" containerData="7877" selectedElement="_EE8qsiboEeW9ROXCOc_cyw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qpyboEeW9ROXCOc_cyw" containerData="2843" selectedElement="_EE8qrSboEeW9ROXCOc_cyw" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_EE8qqCboEeW9ROXCOc_cyw" elementId="org.eclipse.debug.internal.ui.NavigatorFolderView" containerData="1917" selectedElement="_EE8qqSboEeW9ROXCOc_cyw">
                   <tags>newtablook</tags>
                   <tags>org.eclipse.e4.primaryNavigationStack</tags>
@@ -180,7 +181,7 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_EE8qsSboEeW9ROXCOc_cyw" elementId="org.eclipse.debug.ui.RegisterView" toBeRendered="false" ref="_EFA8SSboEeW9ROXCOc_cyw"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qsiboEeW9ROXCOc_cyw" containerData="8276" selectedElement="_EE8qsyboEeW9ROXCOc_cyw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_EE8qsiboEeW9ROXCOc_cyw" containerData="7157" selectedElement="_EE8qsyboEeW9ROXCOc_cyw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_EE8qsyboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.editorss" containerData="8793" ref="_EE-ftSboEeW9ROXCOc_cyw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_EE8qtCboEeW9ROXCOc_cyw" elementId="org.eclipse.debug.internal.ui.OutlineFolderView" toBeRendered="false" containerData="1207">
                   <tags>newtablook</tags>
@@ -190,7 +191,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartStack" xmi:id="_EE8qtyboEeW9ROXCOc_cyw" elementId="org.eclipse.debug.internal.ui.ConsoleFolderView" containerData="1000" selectedElement="_EE8quCboEeW9ROXCOc_cyw">
+            <children xsi:type="basic:PartStack" xmi:id="_EE8qtyboEeW9ROXCOc_cyw" elementId="org.eclipse.debug.internal.ui.ConsoleFolderView" containerData="2123" selectedElement="_EE8quCboEeW9ROXCOc_cyw">
               <tags>newtablook</tags>
               <tags>org.eclipse.e4.secondaryDataStack</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_EE8quCboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.console.ConsoleView" ref="_EFAU4iboEeW9ROXCOc_cyw"/>
@@ -199,6 +200,61 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_EE9RkSboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.views.PropertySheet" toBeRendered="false" ref="_EFA8ECboEeW9ROXCOc_cyw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_EE9RkiboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.debug.ui.DisplayView" toBeRendered="false" ref="_EFA8SiboEeW9ROXCOc_cyw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_EE9RkyboEeW9ROXCOc_cyw" elementId="org.eclipse.search.SearchResultView" toBeRendered="false" ref="_EFA8SyboEeW9ROXCOc_cyw"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="advanced:Perspective" xmi:id="_tWZ9cCsCEeWaM5B-UHBblQ" elementId="org.python.pydev.ui.PythonPerspective" selectedElement="_tWZ9cSsCEeWaM5B-UHBblQ" label="PyDev" iconURI="platform:/plugin/org.python.pydev/icons/python_16x16.png">
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
+          <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
+          <tags>persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.keyBindings</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
+          <tags>persp.actionSet:org.eclipse.wb.core.ui.actionset</tags>
+          <tags>persp.newWizSC:org.python.pydev.ui.wizards.project.PythonProjectWizard</tags>
+          <tags>persp.newWizSC:org.python.pydev.ui.wizards.files.PythonSourceFolderWizard</tags>
+          <tags>persp.newWizSC:org.python.pydev.ui.wizards.files.PythonPackageWizard</tags>
+          <tags>persp.newWizSC:org.python.pydev.ui.wizards.files.PythonModuleWizard</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.wizards.new.folder</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.wizards.new.file</tags>
+          <tags>persp.newWizSC:org.eclipse.ui.editors.wizards.UntitledTextFileWizard</tags>
+          <tags>persp.viewSC:org.python.pydev.views.PyCodeCoverageView</tags>
+          <tags>persp.viewSC:org.python.pydev.navigator.view</tags>
+          <tags>persp.viewSC:org.python.pydev.debug.pyunit.pyUnitView</tags>
+          <tags>persp.viewSC:org.eclipse.search.ui.views.SearchView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.console.ConsoleView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ContentOutline</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ProblemView</tags>
+          <tags>persp.viewSC:org.eclipse.pde.runtime.LogView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.TaskList</tags>
+          <tags>persp.actionSet:org.eclipse.debug.ui.launchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.NavigateActionSet</tags>
+          <tags>persp.actionSet:com.python.pydev.navigate.actionSet</tags>
+          <tags>persp.showIn:org.eclipse.ui.views.ResourceNavigator</tags>
+          <tags>persp.showIn:org.python.pydev.navigator.view</tags>
+          <tags>persp.showIn:org.eclipse.ui.views.ContentOutline</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_tWZ9cSsCEeWaM5B-UHBblQ" selectedElement="_tWZ9dCsCEeWaM5B-UHBblQ" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_tWZ9cisCEeWaM5B-UHBblQ" elementId="topLeft" containerData="2600" selectedElement="_tWZ9cysCEeWaM5B-UHBblQ">
+              <tags>newtablook</tags>
+              <tags>noFocus</tags>
+              <children xsi:type="advanced:Placeholder" xmi:id="_tWZ9cysCEeWaM5B-UHBblQ" elementId="org.python.pydev.navigator.view" ref="_tWYvUCsCEeWaM5B-UHBblQ"/>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_tWZ9dCsCEeWaM5B-UHBblQ" containerData="7400" selectedElement="_tWZ9disCEeWaM5B-UHBblQ">
+              <children xsi:type="advanced:Placeholder" xmi:id="_tWZ9dSsCEeWaM5B-UHBblQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_EE-ftSboEeW9ROXCOc_cyw"/>
+              <children xsi:type="basic:PartStack" xmi:id="_tWZ9disCEeWaM5B-UHBblQ" elementId="bottom" containerData="2500" selectedElement="_tWakgCsCEeWaM5B-UHBblQ">
+                <tags>newtablook</tags>
+                <tags>active</tags>
+                <tags>noFocus</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_tWZ9dysCEeWaM5B-UHBblQ" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_EFAU4SboEeW9ROXCOc_cyw"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_tWakgCsCEeWaM5B-UHBblQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_EFAU4iboEeW9ROXCOc_cyw"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_tWakgSsCEeWaM5B-UHBblQ" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_EFAU8yboEeW9ROXCOc_cyw"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_tWakgisCEeWaM5B-UHBblQ" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_EFAU9CboEeW9ROXCOc_cyw"/>
+              </children>
             </children>
           </children>
         </children>
@@ -227,12 +283,10 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_EE-ftSboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.editorss" selectedElement="_EE-ftiboEeW9ROXCOc_cyw">
-      <children xsi:type="basic:PartStack" xmi:id="_EE-ftiboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Eqa5oCbpEeWQxotgh9ay_Q">
+      <children xsi:type="basic:PartStack" xmi:id="_EE-ftiboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="__zXA8CsCEeWaM5B-UHBblQ">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_EE-ftyboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_online_learner_sequential_all_together_categories" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_online_learner_sequential_all_together_categories.py&quot; partName=&quot;my_online_learner_sequential_all_together_categories&quot; title=&quot;my_online_learner_sequential_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_online_learner_sequential_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_online_learner_sequential_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5015&quot; selectionTopPixel=&quot;1763&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -322,7 +376,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE-fxyboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="npyio" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;npyio.py&quot; partName=&quot;npyio&quot; title=&quot;npyio&quot; tooltip=&quot;/usr/lib/python2.7/dist-packages/numpy/lib/npyio.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/usr/lib/python2.7/dist-packages/numpy/lib/npyio.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6533&quot; selectionTopPixel=&quot;3740&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;npyio.py&quot; partName=&quot;npyio&quot; title=&quot;npyio&quot; tooltip=&quot;/usr/lib/python2.7/dist-packages/numpy/lib/npyio.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/usr/lib/python2.7/dist-packages/numpy/lib/npyio.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6481&quot; selectionTopPixel=&quot;3740&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -372,7 +426,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE-f0CboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="restrained_data_computing_and_saving_tfidf" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;restrained_data_computing_and_saving_tfidf.py&quot; partName=&quot;restrained_data_computing_and_saving_tfidf&quot; title=&quot;restrained_data_computing_and_saving_tfidf&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;212&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2823&quot; selectionTopPixel=&quot;1404&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;restrained_data_computing_and_saving_tfidf.py&quot; partName=&quot;restrained_data_computing_and_saving_tfidf&quot; title=&quot;restrained_data_computing_and_saving_tfidf&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/restrained_data_computing_and_saving_tfidf.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;430&quot; selectionOffset=&quot;5656&quot; selectionTopPixel=&quot;2247&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -418,7 +472,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE-f2CboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="xgb_classifier_full_hashed" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;xgb_classifier_full_hashed.py&quot; partName=&quot;xgb_classifier_full_hashed&quot; title=&quot;xgb_classifier_full_hashed&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/xgb_classifier_full_hashed.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/xgb_classifier_full_hashed.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4033&quot; selectionTopPixel=&quot;1560&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;xgb_classifier_full_hashed.py&quot; partName=&quot;xgb_classifier_full_hashed&quot; title=&quot;xgb_classifier_full_hashed&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/xgb_classifier_full_hashed.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/xgb_classifier_full_hashed.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;567&quot; selectionTopPixel=&quot;542&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -440,7 +494,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE-f3CboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_xgb_classifier_sequential_all_together_categories" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_sequential_all_together_categories.py&quot; partName=&quot;my_xgb_classifier_sequential_all_together_categories&quot; title=&quot;my_xgb_classifier_sequential_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1617&quot; selectionTopPixel=&quot;425&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_sequential_all_together_categories.py&quot; partName=&quot;my_xgb_classifier_sequential_all_together_categories&quot; title=&quot;my_xgb_classifier_sequential_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;336&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1617&quot; selectionTopPixel=&quot;873&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -540,7 +594,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE_GyCboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="sgd_classifier_full_hashed" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;sgd_classifier_full_hashed.py&quot; partName=&quot;sgd_classifier_full_hashed&quot; title=&quot;sgd_classifier_full_hashed&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/sgd_classifier_full_hashed.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/sgd_classifier_full_hashed.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;765&quot; selectionTopPixel=&quot;95&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;sgd_classifier_full_hashed.py&quot; partName=&quot;sgd_classifier_full_hashed&quot; title=&quot;sgd_classifier_full_hashed&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/sgd_classifier_full_hashed.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/sgd_classifier_full_hashed.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;706&quot; selectionTopPixel=&quot;97&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -576,7 +630,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE_GziboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_xgb_classifier_parallel_all_together_categories" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_parallel_all_together_categories.py&quot; partName=&quot;my_xgb_classifier_parallel_all_together_categories&quot; title=&quot;my_xgb_classifier_parallel_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_parallel_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_parallel_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3717&quot; selectionTopPixel=&quot;1278&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_parallel_all_together_categories.py&quot; partName=&quot;my_xgb_classifier_parallel_all_together_categories&quot; title=&quot;my_xgb_classifier_parallel_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_parallel_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_parallel_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3713&quot; selectionTopPixel=&quot;1268&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -598,7 +652,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE_G0iboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="xgdClassifierThread" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;xgdClassifierThread.py&quot; partName=&quot;xgdClassifierThread&quot; title=&quot;xgdClassifierThread&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/xgdClassifierThread.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/xgdClassifierThread.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1441&quot; selectionTopPixel=&quot;544&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;xgdClassifierThread.py&quot; partName=&quot;xgdClassifierThread&quot; title=&quot;xgdClassifierThread&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/xgdClassifierThread.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/xgdClassifierThread.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;379&quot; selectionTopPixel=&quot;235&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -626,7 +680,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE_G1yboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_xgb_classifier_sequential_tfidf_restrained_all_together_categories" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot; partName=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories&quot; title=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;131&quot; selectionOffset=&quot;2664&quot; selectionTopPixel=&quot;687&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot; partName=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories&quot; title=&quot;my_xgb_classifier_sequential_tfidf_restrained_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3249&quot; selectionTopPixel=&quot;944&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -648,7 +702,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE_G2yboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="computing_and_mapping_the_ouput_restrained_data" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;computing_and_mapping_the_ouput_restrained_data.py&quot; partName=&quot;computing_and_mapping_the_ouput_restrained_data&quot; title=&quot;computing_and_mapping_the_ouput_restrained_data&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;44&quot; selectionLength=&quot;45&quot; selectionOffset=&quot;4282&quot; selectionTopPixel=&quot;1983&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;computing_and_mapping_the_ouput_restrained_data.py&quot; partName=&quot;computing_and_mapping_the_ouput_restrained_data&quot; title=&quot;computing_and_mapping_the_ouput_restrained_data&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/computing_and_mapping_the_ouput_restrained_data.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2490&quot; selectionTopPixel=&quot;1757&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -688,7 +742,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EE_G4iboEeW9ROXCOc_cyw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="translating_restrained_data_tfidf_predictors_saved" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;translating_restrained_data_tfidf_predictors_saved.py&quot; partName=&quot;translating_restrained_data_tfidf_predictors_saved&quot; title=&quot;translating_restrained_data_tfidf_predictors_saved&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1194&quot; selectionTopPixel=&quot;573&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;translating_restrained_data_tfidf_predictors_saved.py&quot; partName=&quot;translating_restrained_data_tfidf_predictors_saved&quot; title=&quot;translating_restrained_data_tfidf_predictors_saved&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/translating_restrained_data_tfidf_predictors_saved.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1194&quot; selectionTopPixel=&quot;561&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
@@ -732,12 +786,46 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_Eqa5oCbpEeWQxotgh9ay_Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_sgd_sequential_tfidf_restrained_all_together_categories" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot; partName=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories&quot; title=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3215&quot; selectionTopPixel=&quot;873&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot; partName=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories&quot; title=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3559&quot; selectionTopPixel=&quot;1020&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.python.pydev.editor.PythonEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_RfHm4CkoEeWOM7kNKmszjQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_xgb_sequential_tfidf_restrained_all_together_categories_output_building" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_xgb_sequential_tfidf_restrained_all_together_categories_output_building.py&quot; partName=&quot;my_xgb_sequential_tfidf_restrained_all_together_categories_output_building&quot; title=&quot;my_xgb_sequential_tfidf_restrained_all_together_categories_output_building&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_xgb_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_xgb_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2784&quot; selectionTopPixel=&quot;978&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_hVRRUClWEeWZlOiHOxIFhg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot; partName=&quot;my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories&quot; title=&quot;my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_meta_xgb_classifier_sequential_tfidf_restrained_all_together_categories.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2332&quot; selectionTopPixel=&quot;684&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_vxzsAClZEeWZlOiHOxIFhg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="my_sgd_sequential_tfidf_restrained_all_together_categories_output_building" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories_output_building.py&quot; partName=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories_output_building&quot; title=&quot;my_sgd_sequential_tfidf_restrained_all_together_categories_output_building&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/my_sgd_sequential_tfidf_restrained_all_together_categories_output_building.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2684&quot; selectionTopPixel=&quot;998&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_3C8lECleEeWdYOwyfwf7mg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="fast_solution" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;fast_solution.py&quot; partName=&quot;fast_solution&quot; title=&quot;fast_solution&quot; tooltip=&quot;CATEGORIZER/com/classifier/online_learning/fast_solution.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CATEGORIZER/com/classifier/online_learning/fast_solution.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_vXlyECsCEeWaM5B-UHBblQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="comparator" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;__init__.py&quot; partName=&quot;comparator&quot; title=&quot;comparator&quot; tooltip=&quot;LEVENSHTEIN_COMPARATOR/com/comparator/__init__.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LEVENSHTEIN_COMPARATOR/com/comparator/__init__.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="__zXA8CsCEeWaM5B-UHBblQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="cannib_checker" iconURI="platform:/plugin/org.python.pydev/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;cannib_checker.py&quot; partName=&quot;cannib_checker&quot; title=&quot;cannib_checker&quot; tooltip=&quot;LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;268&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -788,7 +876,7 @@
       <tags>categoryTag:General</tags>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_EE_uJSboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xA;&lt;expanded>&#xA;&lt;category IMemento.internal.id=&quot;Warnings (9 items)&quot;/>&#xA;&lt;/expanded>&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;105&quot; org.eclipse.ui.ide.markerType=&quot;652&quot; org.eclipse.ui.ide.pathField=&quot;140&quot; org.eclipse.ui.ide.resourceField=&quot;105&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;350&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;105&quot; org.eclipse.ui.ide.markerType=&quot;652&quot; org.eclipse.ui.ide.pathField=&quot;140&quot; org.eclipse.ui.ide.resourceField=&quot;105&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;350&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_EE_uJiboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.views.ProblemView">
@@ -838,6 +926,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_EFAU4yboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -1212,6 +1302,16 @@
       <tags>View</tags>
       <tags>categoryTag:General</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_tWYvUCsCEeWaM5B-UHBblQ" elementId="org.python.pydev.navigator.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="PyDev Package Explorer" iconURI="platform:/plugin/org.python.pydev/icons/pydev_package_explorer.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xA;&lt;expanded IMemento.internal.id=&quot;/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR&quot;/>&#xA;&lt;expanded IMemento.internal.id=&quot;/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com&quot;/>&#xA;&lt;expanded IMemento.internal.id=&quot;/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator&quot;/>&#xA;&lt;selected IMemento.internal.id=&quot;/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py&quot;/>&#xA;&lt;/view>"/>
+      <tags>View</tags>
+      <tags>categoryTag:PyDev</tags>
+      <menus xmi:id="_tXDdsCsCEeWaM5B-UHBblQ" elementId="org.python.pydev.navigator.view">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_tXDdsSsCEeWaM5B-UHBblQ" elementId="org.python.pydev.navigator.view"/>
+    </sharedElements>
     <trimBars xmi:id="_EFA8TCboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_EFBjACboEeW9ROXCOc_cyw" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1219,7 +1319,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EFBjAiboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_9BbH8iboEeWQxotgh9ay_Q" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_EFJfeiboEeW9ROXCOc_cyw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_gXhsMCsCEeWaM5B-UHBblQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_EFJfeiboEeW9ROXCOc_cyw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EFBjECboEeW9ROXCOc_cyw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1231,13 +1331,13 @@
       <children xsi:type="menu:ToolBar" xmi:id="_EFBjPSboEeW9ROXCOc_cyw" elementId="com.python.pydev.debug.actionSet" visible="false">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_EFBjPiboEeW9ROXCOc_cyw" elementId="com.python.pydev.navigate.actionSet" visible="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_EFBjPiboEeW9ROXCOc_cyw" elementId="com.python.pydev.navigate.actionSet">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EFBjPyboEeW9ROXCOc_cyw" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_EFBjRCboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet">
+      <children xsi:type="menu:ToolBar" xmi:id="_EFBjRCboEeW9ROXCOc_cyw" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EFBjSSboEeW9ROXCOc_cyw" elementId="org.eclipse.search.searchActionSet">
@@ -1249,7 +1349,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EFBjUCboEeW9ROXCOc_cyw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_9BgngCboEeWQxotgh9ay_Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_EFIRCCboEeW9ROXCOc_cyw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_gXny0CsCEeWaM5B-UHBblQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_EFIRCCboEeW9ROXCOc_cyw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EFCKFyboEeW9ROXCOc_cyw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

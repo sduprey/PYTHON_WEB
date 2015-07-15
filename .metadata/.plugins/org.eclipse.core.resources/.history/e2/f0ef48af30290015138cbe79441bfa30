@@ -1,0 +1,93 @@
+'''
+Created on 10 Jul 2015
+
+@author: sduprey
+'''
+import numpy as np
+import psycopg2
+import csv
+
+def load_previously_saved_predictions(filename):
+    loader = np.load(filename)
+    return loader['data']
+
+def write_output_prediction_file(filename, testing_id, category_predictions):
+    my_csv_file = open(filename, 'w')
+    my_csv_writer = csv.writer(my_csv_file, delimiter=';')
+    my_csv_writer.writerow(["Id_Produit","Id_Category"])
+    for i in range(len(category_predictions)):
+        my_csv_writer.writerow([testing_id[i],category_predictions[i]])
+        
+        
+
+
+if __name__ == "__main__":
+    
+    conn_string = "host='localhost' dbname='CATEGORIZERDB' user='postgres' password='mogette'"
+    # print the connection string we will use to connect
+ 
+    # get a connection, if a connect cannot be made an exception will be raised here
+    conn = psycopg2.connect(conn_string)
+    conn.autocommit = True
+    # conn.cursor will return a cursor object, you can use this cursor to perform queries
+    cursor = conn.cursor()
+    
+    
+    print("Loading all testing... ")
+
+    sql_testing_data_request = 'select identifiant_produit, description, libelle, marque, prix from TESTING_DATA'
+    cursor.execute(sql_testing_data_request); 
+    # retrieve the records from the database
+    fetched_testing_data = cursor.fetchall()
+    testing_identifiant_produit_list = [item[0] for item in fetched_testing_data];
+    testing_documents  = [item[1] + ' '+item[2] for item in fetched_testing_data];
+
+    print('Getting the categories/id mapping for the output')    
+    print("Loading category mapping data")
+    sql_category_mapping_request = "select * from category_mapping"
+    cursor.execute(sql_category_mapping_request); 
+    category_mapping_data = cursor.fetchall()
+
+
+    my_mapping_dictionnary = {}
+    my_inverse_mapping_dictionnary ={}
+
+    for mapping_item in category_mapping_data :
+        my_mapping_dictionnary[mapping_item[0]]=mapping_item[1]
+        my_inverse_mapping_dictionnary[mapping_item[1]]=mapping_item[0]
+
+    print('Size of my dictionnary ' + str(len(my_mapping_dictionnary.items())))
+    print('Size of my inverse dictionnary ' + str(len(my_inverse_mapping_dictionnary.items())))
+
+    #reading the forescasted predictions
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_submission.csv.npz"
+    
+    print("Reading model from our file : " + filename_category_model)
+    
+    predictions = load_previously_saved_predictions(filename_category_model)
+    print(type(predictions))
+    print(predictions.shape[0])
+    print(predictions.shape[1])
+    
+    my_most_likely_predictions = []
+    for i in range(predictions.shape[0]) :
+        if i == 31648 :
+            print("Debug")
+        print('Dealing with row to predict number : '+str(i+1)) 
+        my_prediction_for_the_row = predictions[i,:] 
+        my_category_predicted_id = my_prediction_for_the_row.argmax()
+        my_category_predicted = my_inverse_mapping_dictionnary[my_category_predicted_id+1]
+        print("My_predicted_category : "+str(my_category_predicted))
+        my_most_likely_predictions.append(my_category_predicted)
+        
+    print("size of the prediction vector : "+str(len(my_most_likely_predictions)))
+    
+    
+    file_output = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_submission_most_likely.csv"
+    write_output_prediction_file(file_output, testing_identifiant_produit_list, my_most_likely_predictions)
+    
+    
+    
+
+
+    

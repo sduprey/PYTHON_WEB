@@ -828,6 +828,9 @@ ImageSequence|/usr/lib/python2.7/dist-packages/PILcompat/ImageSequence.py
 ImageStat|/usr/lib/python2.7/dist-packages/PILcompat/ImageStat.py
 ImageTk|/usr/lib/python2.7/dist-packages/PILcompat/ImageTk.py
 ImageWin|/usr/lib/python2.7/dist-packages/PILcompat/ImageWin.py
+Levenshtein.StringMatcher|/usr/local/lib/python2.7/dist-packages/Levenshtein/StringMatcher.py
+Levenshtein.__init__|/usr/local/lib/python2.7/dist-packages/Levenshtein/__init__.py
+Levenshtein._levenshtein|/usr/local/lib/python2.7/dist-packages/Levenshtein/_levenshtein.so
 MimeWriter|/usr/lib/python2.7/MimeWriter.py
 MySQLdb.__init__|/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py
 MySQLdb.connections|/usr/lib/python2.7/dist-packages/MySQLdb/connections.py

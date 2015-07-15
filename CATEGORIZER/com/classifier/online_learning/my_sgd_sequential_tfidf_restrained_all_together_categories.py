@@ -35,11 +35,8 @@ class my_sgd_classifier_all_together_category:
         rf_clf=sgd_classifier_full_hashed(loss='log',alpha=0.000001,n_iter=100, nb_categories=self.nb_categories) 
             
       
-        
-     
-        
-        X_test_xgb_pred = rf_clf.train_predict_all_labels(Xtrain, ytrain,Xtest)
-        return X_test_xgb_pred
+        X_test_xgb_pred, X_train_xgb_pred = rf_clf.train_predict_all_labels(Xtrain, ytrain,Xtest)
+        return X_test_xgb_pred, X_train_xgb_pred
         
  
 if __name__ == "__main__":
@@ -78,11 +75,16 @@ if __name__ == "__main__":
       
     # getting the weighted model for our category
     print('Training and predicting sgd classifier for each category')
-    my_sgb_predictions = sgd_all_categories.train_predict_all_labels(Xtrain, ytrain, Xtest)
+    my_sgb_predictionstest,  my_sgb_predictionstrain= sgd_all_categories.train_predict_all_labels(Xtrain, ytrain, Xtest)
     
-    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sgd_sequential_restrained_tfidf_all_together_submission.csv"
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sgd_sequential_restrained_tfidf_all_together_test_submission.csv"
     print("Saving model to our file : " + filename_category_model)
-    sgd_all_categories.save_model(filename_category_model, my_sgb_predictions)
+    sgd_all_categories.save_model(filename_category_model, my_sgb_predictionstest)
+   
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/sgd_sequential_restrained_tfidf_all_together_train_submission.csv"
+    print("Saving model to our file : " + filename_category_model)
+    sgd_all_categories.save_model(filename_category_model, my_sgb_predictionstrain)
+   
     
     # saving the model for the category number
     

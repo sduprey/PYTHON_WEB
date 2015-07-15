@@ -21,10 +21,12 @@ class sgd_classifier_full_hashed :
         fitted_model = clf.fit(X_train, y_train)
         print('Predicting on the test samlpe using stochastic gradient descent  model')
         ypred = fitted_model.predict_proba(X_test)
-        return ypred
+        ypredtrain = fitted_model.predict_proba(X_train)
+        return ypred, ypredtrain
     
     def train_predict_all_labels(self,X_train,y_train,X_test):
-        xgb_predict=[]        
+        xgb_predicttest=[]  
+        xgb_predicttrain=[]         
         for i in range(self.nb_categories) :
             y_i=np.zeros(y_train.shape, dtype=np.int)
             y_i[y_train == (i+1)] = 1
@@ -32,7 +34,8 @@ class sgd_classifier_full_hashed :
             print('Dealing with category : '+str(i+1))
             print('Category size : '+str(sum(y_i)))            
             #predicting the category i using our xgb model
-            predicted = self.train_predict(X_train, y_i, X_test)
-            xgb_predict.append(predicted)
-        return np.column_stack(xgb_predict)
+            predicted, predictedtrain = self.train_predict(X_train, y_i, X_test)
+            xgb_predicttest.append(predicted)
+            xgb_predicttrain.append(predictedtrain)
+        return np.column_stack(xgb_predicttest),  np.column_stack(xgb_predicttrain)
     

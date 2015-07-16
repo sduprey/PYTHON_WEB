@@ -48,15 +48,37 @@ if __name__ == "__main__":
     
     
     # first round base xgb predictor
-    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_submission.csv.npz"
+#####    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_submission.csv.npz"
      
-    print("Reading model from our file : " + filename_category_model)
+#####    print("Reading model from our file : " + filename_category_model)
     
-    predictions = xgb_all_categories.load_previously_saved_predictions(filename_category_model)
-    print(type(predictions))
-    print(predictions.shape[0])
-    print(predictions.shape[1])
+#####    predictions = xgb_all_categories.load_previously_saved_predictions(filename_category_model)
+#####    print(type(predictions))
+#####    print(predictions.shape[0])
+#####    print(predictions.shape[1])
     
+    # loading the base predictor predictions for the training data
+    my_training_data_predicted = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_train_submission.csv.npz"
+    print("Reading train data prediction model from our file : " + my_training_data_predicted)
+    
+    train_predictions = xgb_all_categories.load_previously_saved_predictions(my_training_data_predicted)
+    print(type(train_predictions))
+    print(train_predictions.shape[0])
+    print(train_predictions.shape[1])
+    sparse_train_predictions = sparse.csr_matrix(train_predictions)
+    del train_predictions
+    
+    # loading the base predictor predictions for the testing data        
+    my_testing_data_predicted = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_test_submission.csv.npz"
+    print("Reading test data prediction model from our file : " + my_testing_data_predicted)
+    
+    test_predictions = xgb_all_categories.load_previously_saved_predictions(my_testing_data_predicted)
+    print(type(test_predictions))
+    print(test_predictions.shape[0])
+    print(test_predictions.shape[1])
+    
+    sparse_test_predictions=sparse.csr_matrix(test_predictions)
+    del test_predictions
     
     my_saving_training_matrix_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/whole_tfidf_restrained_data_training_matrix.bin.npz'
     Xtrain = xgb_all_categories.load_sparse_csr(my_saving_training_matrix_file)
@@ -79,15 +101,42 @@ if __name__ == "__main__":
 #        print('Category size : '+str(sum(y_i)))
     my_saving_testing_matrix_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/whole_tfidf_restrained_data_testing_matrix.bin.npz'
     Xtest = xgb_all_categories.load_sparse_csr(my_saving_testing_matrix_file)
+    
     print('Testing sample size')
     print(Xtest.shape[0])
     print(Xtest.shape[1])
       
-    # getting the weighted model for our category
-    print('Training and predicting xgb classifier for each category')
-    my_xgb_predictions = xgb_all_categories.train_predict_all_labels(Xtrain, ytrain, Xtest)
+      
+    print('Training sample size')
+    print(type(Xtrain))
+    print(Xtrain.shape[0])
+    print(Xtrain.shape[1])
     
-    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_submission.csv"
+    print(type(sparse_train_predictions))
+    print(sparse_train_predictions.shape[0])
+    print(sparse_train_predictions.shape[1])
+
+    print("we here concatenate Xtrain et train_predictions")
+
+    meta_train = sparse.hstack((Xtrain,sparse_train_predictions))
+    print(type(meta_train))
+    print(meta_train.shape[0])
+    print(meta_train.shape[1])
+    
+    meta_test = sparse.hstack((Xtest,sparse_test_predictions))
+    print(type(meta_test))
+    print(meta_test.shape[0])
+    print(meta_test.shape[1])
+    
+    print("we here concatenate Xtest et test_predictions")
+    # getting the weighted model for our category
+    print('Training and predicting the meta xgb classifier for each category over the concatenated train data and predictions from train data')
+    print("meta train type")
+    
+    print("meta test type")
+    my_xgb_predictions = xgb_all_categories.train_predict_all_labels(meta_train, ytrain, meta_test)
+    
+    filename_category_model = "/home/sduprey/My_Data/My_Cdiscount_Challenge/meta_xgb_sequential_whole_tfidf_restrained_data_all_together_submission.csv"
     print("Saving model to our file : " + filename_category_model)
     xgb_all_categories.save_model(filename_category_model, my_xgb_predictions)
     
@@ -95,6 +144,7 @@ if __name__ == "__main__":
     
     
     
-    
+    my_training_data_predicted = "/home/sduprey/My_Data/My_Cdiscount_Challenge/xgb_sequential_whole_tfidf_restrained_data_all_together_train_submission.csv.npz"
+
     
     

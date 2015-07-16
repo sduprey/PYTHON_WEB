@@ -144,9 +144,13 @@ print("n_samples: %d, n_features: %d" % X_train.shape)
 print("saving the tf/idf matrix for our training data")
 
 my_saving_training_matrix_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/whole_tfidf_restrained_data_training_matrix.bin'
+print("saving to "+my_saving_training_matrix_file)
+print(X_train.shape[0])
+print(X_train.shape[1])
 save_sparse_csr(my_saving_training_matrix_file,X_train)
 
 my_saving_training_outputvector_file = '/home/sduprey/My_Data/My_Cdiscount_Challenge/whole_tfidf_restrained_data_training_output_vector.bin'
+print("saving to "+my_saving_training_outputvector_file)
 save_output(my_saving_training_outputvector_file,y_train)
 
 

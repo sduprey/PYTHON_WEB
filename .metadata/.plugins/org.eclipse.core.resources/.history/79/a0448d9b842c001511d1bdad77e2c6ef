@@ -1,0 +1,68 @@
+'''
+Created on 15 Jul 2015
+
+@author: sduprey
+'''
+import Levenshtein
+
+def chunks(l, n):
+    for i in xrange(0, len(l), n):
+        yield l[i:i+n]
+
+
+lf = open("/home/sduprey/My_Data/My_Cannib_Checker/lf.txt", "r")
+sdx = open("/home/sduprey/My_Data/My_Cannib_Checker/sdx.txt", "r")
+out = open("/home/sduprey/My_Data/My_Cannib_Checker/out.txt", "w")
+
+parself = lf.readlines()
+parsesdx = sdx.readlines()
+
+count = sum(1 for line in parself)
+
+
+print("Length of the firs list to loop open :")
+print(str(len(parself)))
+print(str(count))
+
+
+chunk_size = 1500
+my_chunks = list(chunks(range(count), chunk_size))
+nb_pieces_chunk = len(my_chunks)
+print('Delegating to '+str(nb_pieces_chunk) + ' threads ')
+   
+threads = []
+thread_counter = 0 
+for i in range(nb_pieces_chunk) :      
+    thread_counter = thread_counter + 1
+    print('Launching a thread number ' + str(thread_counter) + ' for the categories : ' + str(my_chunks[i]))
+    # Create new threads
+    threadi = xgdClassifierThread(i, "Thread_"+str(i), Xtrain, ytrain, Xtest, my_chunks[i])
+    threadi.start()
+    threads.append(threadi)
+    
+    # Wait for all threads to complete
+for t in threads:
+    t.join()
+    print "Exiting Main Thread after all threads finish"
+
+
+
+
+
+i = 0
+for kwlf in parself:
+
+    for kwsdx in parsesdx:
+        kwsdx = kwsdx.strip()
+        kwlf = kwlf.strip()
+        ratio = Levenshtein.ratio(kwlf, kwsdx)
+        if ratio > 0.9:
+            out.write(kwlf+"|"+kwsdx+"|"+str(ratio)+"\n")
+            print(kwlf+" "+kwsdx+" "+str(ratio))
+
+    print(str(i)+" "+str((i/count) * 100)+" %")
+    i += 1
+
+lf.close()
+sdx.close()
+out.close()

@@ -2,25 +2,46 @@
 -- START DISKCACHE
 /home/sduprey/My_Code/My_New_Python_Workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/LEVENSHTEIN_COMPARATOR/com.python.pydev.analysis/v2_indexcache
 com.__init__|1436972647000|/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/__init__.py
+com.comparator.sequential_cannib_checker|1437139193000|/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/sequential_cannib_checker.py
+com.comparator.my_levenshtein_thread_computer|1437139571000|/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/my_levenshtein_thread_computer.py
 com.comparator.__init__|1436972647000|/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/__init__.py
-com.comparator.cannib_checker|1436972791000|/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py
+com.comparator.cannib_checker|1437139326000|/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/cannib_checker.py
 -- END DISKCACHE
 -- START DICTIONARY
-1
+5
+5=my_levenshtein_thread_computer.__init__
+2=com.comparator.sequential_cannib_checker
+4=my_levenshtein_thread_computer
+3=com.comparator.my_levenshtein_thread_computer
 1=com.comparator.cannib_checker
 -- END DICTIONARY
 -- START TREE 1
-9
-cou|1|count!11@
-i|1|i!11@
-kwl|1|kwlf!11@
-kws|1|kwsdx!11@
-lf|1|lf!11@
-out|1|out!11@
-par|2|parself!11@parsesdx!11@
-rat|1|ratio!11@
-sdx|1|sdx!11@
+16
+chu|2|chunks!10@chunk_size!11@
+cou|2|count!19@count!11@
+i|1|i!19@
+kwl|1|kwlf!19@
+kws|1|kwsdx!19@
+lf|2|lf!11@lf!19@
+my_|2|my_levenshtein_thread_computer!25@my_chunks!11@
+nb_|1|nb_pieces_chunk!11@
+out|1|out!19@
+par|4|parself!11@parsesdx!11@parsesdx!19@parself!19@
+rat|1|ratio!19@
+sav|0|
+sdx|2|sdx!19@sdx!11@
+ste|1|stepping_through_list!26@
+thr|3|threadi!11@threads!11@thread_counter!11@
+xgd|0|
 -- END TREE
 -- START TREE 2
-0
+8
+__i|1|__init__!4&26@
+my_|2|my_list_chunk!5&27@my_second_list!5&27@
+nam|1|name!5&27@
+run|1|run!4&26@
+thr|1|threadID!5&27@
+xte|0|
+xtr|0|
+ytr|0|
 -- END TREE

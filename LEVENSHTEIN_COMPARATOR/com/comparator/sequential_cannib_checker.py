@@ -1,0 +1,32 @@
+'''
+Created on 15 Jul 2015
+@author: sduprey
+'''
+import Levenshtein
+
+lf = open("/home/sduprey/My_Data/My_Cannib_Checker/lf.txt", "r")
+sdx = open("/home/sduprey/My_Data/My_Cannib_Checker/sdx.txt", "r")
+out = open("/home/sduprey/My_Data/My_Cannib_Checker/out.txt", "w")
+
+parself = lf.readlines()
+parsesdx = sdx.readlines()
+
+count = sum(1 for line in parself)
+
+i = 0
+for kwlf in parself:
+
+    for kwsdx in parsesdx:
+        kwsdx = kwsdx.strip()
+        kwlf = kwlf.strip()
+        ratio = Levenshtein.ratio(kwlf, kwsdx)
+        if ratio > 0.9:
+            out.write(kwlf+"|"+kwsdx+"|"+str(ratio)+"\n")
+            print(kwlf+" "+kwsdx+" "+str(ratio))
+
+    print(str(i)+" "+str((i/count) * 100)+" %")
+    i += 1
+
+lf.close()
+sdx.close()
+out.close()

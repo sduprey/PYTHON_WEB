@@ -41,7 +41,7 @@ def stepping_through_list(threadName, my_list_chunk, my_second_list):
                   #out.write()
                  print(kwlf+"|"+kwsdx+"|"+str(ratio)+"\n")
                    #print(kwlf+" "+kwsdx+" "+str(ratio))
-            print(threadName + str(i)+" "+str((i/count) * 100)+" %")
+            print(str(i)+" "+str((i/count) * 100)+" %")
         i += 1
     
   #        counter -= 1

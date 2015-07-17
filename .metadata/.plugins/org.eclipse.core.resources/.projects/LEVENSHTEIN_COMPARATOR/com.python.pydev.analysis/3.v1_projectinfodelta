@@ -1,0 +1,13 @@
+INSTUPcom.comparator.my_levenshtein_thread_computer
+/home/sduprey/My_Code/My_New_Python_Workspace/LEVENSHTEIN_COMPARATOR/com/comparator/my_levenshtein_thread_computer.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&3|8|2|5&&2|9|2|1&&2|10|2|0
+my_levenshtein_thread_computer.__init__=5
+__init__=3
+threadID=4
+stepping_through_list=10
+my_levenshtein_thread_computer=1
+name=6
+my_list_chunk=7
+run=9
+my_second_list=8
+com.comparator.my_levenshtein_thread_computer=2
